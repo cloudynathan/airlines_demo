@@ -92,7 +92,8 @@ ggplot(clsummary) +
   geom_bar(aes(x = reorder(uniquecarrier, desc(uniquecarrier)), y = n), stat = 'identity') +
   coord_flip() +
   xlab("carriers") +
-  ylab("number of flights")
+  ylab("number of flights") + 
+  scale_y_continuous(labels = scales::comma)
 
 
 
