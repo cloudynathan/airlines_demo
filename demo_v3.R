@@ -93,7 +93,8 @@ ggplot(clsummary) +
   coord_flip() +
   xlab("carriers") +
   ylab("number of flights") + 
-  scale_y_continuous(labels = scales::comma)
+  ggtitle("flights per carrier (clean subset)") + 
+  theme(plot.title = element_text(hjust = 0.5))
 
 
 
